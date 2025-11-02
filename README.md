@@ -1,15 +1,11 @@
 # Push_Swap
 Projeto referente ao Push_swap
 
-Com certeza! Com base no documento do projeto "Push_swap", aqui está um resumo que você pode usar para o seu arquivo README.md.
-
-Como você estuda C na 42 São Paulo, este resumo está formatado para ser claro e direto, cobrindo os objetivos, as regras e a meta de otimização do projeto.
-
-💡 Resumo do Projeto: Push_swap
+Resumo do Projeto: Push_swap
 Este projeto é um desafio algorítmico estruturado com o objetivo de ordenar dados em uma stack (pilha) utilizando um conjunto limitado de instruções, visando alcançar o menor número possível de ações.
 
 
-🎯 Objetivos de Aprendizagem
+Objetivos de Aprendizagem
 O principal objetivo é escrever um algoritmo de ordenação, que é um passo crucial na jornada de um desenvolvedor, frequentemente ligado ao conceito de complexidade de algoritmos.
 
 
@@ -19,18 +15,18 @@ Aplicação de algoritmos básicos com foco em sua complexidade.
 
 Ordenar valores é simples, mas o desafio é encontrar a maneira mais rápida de ordená-los (otimização).
 
-🛠️ O Desafio e as Regras
+O Desafio e as Regras
 O projeto envolve a manipulação de dois stacks, 'a' e 'b', usando um conjunto específico de comandos:
 
 
 Estado Inicial	Stack a	Stack b
 Conteúdo	
-Uma lista aleatória de inteiros (únicos, positivos e/ou negativos)[cite: 123].
+Uma lista aleatória de inteiros (únicos, positivos e/ou negativos).
 
-Vazia[cite: 124].
+Vazia.
 
 Meta	
-Ordenar os números em ordem ascendente[cite: 125].
+Ordenar os números em ordem ascendente.
 
 Deve estar vazia no final da ordenação (para a parte bônus).
 
