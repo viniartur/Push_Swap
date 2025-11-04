@@ -50,7 +50,7 @@ ra / rb / rr: Move o primeiro elemento para a última posição da stack (rotate
 
 rra / rrb / rrr: Move o último elemento para a primeira posição da stack (reverse rotate).
 
-🚀 Otimização (Benchmark)
+Otimização (Benchmark)
 O projeto é validado pela otimização, ou seja, pelo número de operações utilizadas.
 
 Para a Validação Máxima (100%) e elegibilidade para o bônus, você deve alcançar os seguintes limites:
