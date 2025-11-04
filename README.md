@@ -5,14 +5,6 @@ O **Push_Swap** é um projeto algorítmico que testa a sua capacidade de **orden
 
 Este desafio vai além da simples ordenação; ele é uma busca pela **solução mais eficiente**.
 
-### Objetivos de Aprendizagem
-
-Este projeto reforça conceitos essenciais para o desenvolvimento de software de baixo nível e algoritmos, alinhado com o rigor exigido na 42 São Paulo:
-
-* **Rigor e Proficiência em C:** Demonstrar um domínio técnico na linguagem C, com gestão de memória e manipulação de estruturas de dados.
-* **Complexidade Algorítmica:** Aplicar e analisar a complexidade dos algoritmos de ordenação, buscando a melhor performance.
-* **Otimização:** A ordenação é simples, mas o desafio reside em encontrar a **maneira mais rápida** (o caminho com o menor custo de operações) de alcançar o estado final.
-
 ### O Desafio e as Regras
 
 O projeto exige a manipulação de **duas stacks**, `a` e `b`, seguindo as seguintes condições:
