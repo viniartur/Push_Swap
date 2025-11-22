@@ -6,7 +6,7 @@
 /*   By: vvieira <vvieira@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/01 13:57:06 by vvieira           #+#    #+#             */
-/*   Updated: 2025/11/01 13:57:07 by vvieira          ###   ########.fr       */
+/*   Updated: 2025/11/14 19:11:20 by vvieira          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ static int	fill_stack_from_args(char **args, t_list **a)
 	}
 	return (i);
 }
+
 static int	parse_input(int argc, char **argv, t_list **a)
 {
 	int		i;
@@ -94,7 +95,7 @@ int	main(int argc, char *argv[])
 	a = NULL;
 	b = NULL;
 	if (argc < 2)
-		return(0);
+		return (0);
 	total_size = parse_input(argc, argv, &a);
 	check_rep(&a);
 	if (!is_sorted(&a))
@@ -102,4 +103,3 @@ int	main(int argc, char *argv[])
 	free_stack(&a);
 	return (0);
 }
-

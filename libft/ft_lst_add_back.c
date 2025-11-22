@@ -6,7 +6,7 @@
 /*   By: vvieira <vvieira@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/01 13:56:01 by vvieira           #+#    #+#             */
-/*   Updated: 2025/11/01 13:56:03 by vvieira          ###   ########.fr       */
+/*   Updated: 2025/11/14 18:50:07 by vvieira          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lst_add_back(t_list **a, t_list *new_node)
 {
-	t_list *last;
+	t_list	*last;
 
 	if (!new_node)
 		return ;

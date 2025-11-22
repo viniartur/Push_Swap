@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort_utils.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vvieira <vvieira@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/14 18:55:05 by vvieira           #+#    #+#             */
+/*   Updated: 2025/11/14 18:57:30 by vvieira          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "../push_swap.h"
 
@@ -71,12 +82,13 @@ int	min_pos(t_list **a, int min, int size)
 
 void	sort_pa(t_list **a, t_list **b)
 {
+	int	max;
+	int	size_b;
+
 	while (*b != NULL)
 	{
-		int max = maxindex(b);
-		int size_b = ft_lst_size(b);
-
-		// se o maior não está no topo, gira 'b'
+		max = maxindex(b);
+		size_b = ft_lst_size(b);
 		if ((*b)->index != max)
 		{
 			if (!max_pos(b, max, size_b))
@@ -88,5 +100,3 @@ void	sort_pa(t_list **a, t_list **b)
 			pa(a, b);
 	}
 }
-
-

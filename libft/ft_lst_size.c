@@ -6,7 +6,7 @@
 /*   By: vvieira <vvieira@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/01 13:56:05 by vvieira           #+#    #+#             */
-/*   Updated: 2025/11/01 13:56:07 by vvieira          ###   ########.fr       */
+/*   Updated: 2025/11/14 18:49:50 by vvieira          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_lst_size(t_list **list)
 {
-	int i;
-	t_list *temp;
+	int		i;
+	t_list	*temp;
 
 	i = 0;
 	temp = *list;

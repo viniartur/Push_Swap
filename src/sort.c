@@ -1,4 +1,14 @@
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vvieira <vvieira@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/14 18:55:09 by vvieira           #+#    #+#             */
+/*   Updated: 2025/11/14 19:10:14 by vvieira          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "../push_swap.h"
 
@@ -22,6 +32,7 @@ void	sort(t_list **a, t_list **b, int size)
 			sort_big(a, b, 30);
 	}
 }
+
 void	sort_big(t_list **a, t_list **b, int chunk_size)
 {
 	int	i;
@@ -32,9 +43,8 @@ void	sort_big(t_list **a, t_list **b, int chunk_size)
 		if (i > 0 && (*a)->index < i)
 		{
 			pb(a, b);
-			// em vez de rb(b) sozinho, podemos combinar:
 			if ((*a) && (*a)->index >= i + chunk_size)
-				rr(a, b); // ra + rb juntos
+				rr(a, b);
 			else
 				rb(b);
 			i++;
@@ -57,21 +67,24 @@ void	sort_2(t_list **a)
 }
 
 void	sort_3(t_list **a)
-{	
+{
 	if ((*a)->number == maxnum(a))
 	{
 		ra(a);
 		if ((*a)->number > (*a)->next->number)
 			sa(a);
 	}
-	else if ((*a)->number == minnum(a) && (*a)->next->number == maxnum(a))
+	else if ((*a)->number == minnum(a)
+		&& (*a)->next->number == maxnum(a))
 	{
 		rra(a);
 		sa(a);
 	}
-	else if ((*a)->number != minnum(a) && (*a)->number > (*a)->next->number)
+	else if ((*a)->number != minnum(a)
+		&& (*a)->number > (*a)->next->number)
 		sa(a);
-	else if ((*a)->number != minnum(a) && (*a)->number < (*a)->next->number)
+	else if ((*a)->number != minnum(a)
+		&& (*a)->number < (*a)->next->number)
 		rra(a);
 }
 
@@ -82,9 +95,11 @@ void	sort_5(t_list **a, t_list **b, int size)
 	i = 0;
 	while (i < size / 2 + size % 2)
 	{
-		if ((*a)->number > minnum(a) && !min_pos(a, minnum(a), ft_lst_size(a)))
+		if ((*a)->number > minnum(a)
+			&& !min_pos(a, minnum(a), ft_lst_size(a)))
 			ra(a);
-		else if ((*a)->number > minnum(a) && min_pos(a, minnum(a), ft_lst_size(a)))
+		else if ((*a)->number > minnum(a)
+			&& min_pos(a, minnum(a), ft_lst_size(a)))
 			rra(a);
 		else if ((*a)->number == minnum(a))
 		{
